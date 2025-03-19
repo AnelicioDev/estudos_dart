@@ -1,9 +1,16 @@
-class Pessoa {
+class Ninja {
   String nome;
+  String vila;
+  double chakra;
 
-  Pessoa(this.nome);
+  Ninja(this.nome, this.vila, this.chakra);
 
-  void apresentar() {
-    print("sou $nome");
+  void usarJutsu(String jutsu) {
+    print('$nome usou o jutsu $jutsu!');
   }
+}
+
+void main() {
+  Ninja naruto = Ninja('Naruto', 'Konoha', 100.0);
+  naruto.usarJutsu('Rasengan');
 }
